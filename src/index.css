@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(to bottom left, lightgrey, darkgrey);
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  width: min(90%, 400px);
+  font-weight: 600;
+  color: color-mix(in srgb, lightcyan 40%, lightgrey 60%);
+  text-align: center;
+  background-image: linear-gradient(to right, black, grey);
+  border: 1px solid darkcyan;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: min(80%, 340px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, darkgrey, white);
+  border: 1px solid lightcyan;
+  border-radius: 20px;
+}
+
+.form-format {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+input[type="text"] {
+  height: 40px;
+  padding: 0 0 0 15px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  outline-color: lightgreen;
+}
+
+.button {
+  height: 40px;
+  width: 60px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-image: linear-gradient(to right, lightgreen, lightcyan);
+}
+
+.todo-list {
+  width: min(70%, 297.5px);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: lightcoral;
 }
